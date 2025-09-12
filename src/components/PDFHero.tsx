@@ -28,18 +28,9 @@ const PDFHero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
-          {/* Lecturer Badge */}
-          <div className="mb-8">
-            <div className="inline-flex items-center bg-primary/10 border border-primary/20 rounded-full px-6 py-2 text-sm font-medium text-primary backdrop-blur-sm hover:bg-primary/15 transition-colors cursor-pointer">
-              <span className="mr-2">👨‍🏫</span>
-              Lecturer? Visit Lecturer Page
-              <span className="ml-2">→</span>
-            </div>
-          </div>
-
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
-            Learn 10x faster with AI for{" "}
+            <span className="text-orange-500">Learn 10x faster with AI for</span>{" "}
             <span className="text-primary relative">
               Your Exams
               <svg
@@ -77,25 +68,6 @@ const PDFHero = () => {
                   className="w-12 h-12 rounded-full border-2 border-background shadow-soft hover:scale-110 transition-transform"
                 />
               ))}
-            </div>
-
-            {/* Stats */}
-            <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Users className="h-4 w-4" />
-                <span className="font-semibold text-foreground">40,000+</span>
-                <span>Students</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <FileText className="h-4 w-4" />
-                <span className="font-semibold text-foreground">150K+</span>
-                <span>Documents</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Star className="h-4 w-4 fill-primary text-primary" />
-                <span className="font-semibold text-foreground">4.8/5</span>
-                <span>Rating</span>
-              </div>
             </div>
           </div>
 
