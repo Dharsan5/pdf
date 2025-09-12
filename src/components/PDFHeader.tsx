@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, Users, FileText, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const PDFHeader = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,10 +21,12 @@ const PDFHeader = () => {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold">
-              <span className="text-primary">Study</span>
-              <span className="text-orange-500">Mind</span>
-            </div>
+            <Link to="/">
+              <div className="text-2xl font-bold">
+                <span className="text-primary">Study</span>
+                <span className="text-orange-500">Mind</span>
+              </div>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -32,8 +35,12 @@ const PDFHeader = () => {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm">Sign In</Button>
-            <Button variant="gradient" size="sm">Get Started</Button>
+            <Link to="/signin">
+              <Button variant="ghost" size="sm">Sign In</Button>
+            </Link>
+            <Link to="/signup">
+              <Button variant="gradient" size="sm">Get Started</Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -52,8 +59,12 @@ const PDFHeader = () => {
           <div className="md:hidden bg-card border-t border-border">
             <div className="px-4 py-4 space-y-4">
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="ghost" size="sm">Sign In</Button>
-                <Button variant="gradient" size="sm">Get Started</Button>
+                <Link to="/signin" className="w-full">
+                  <Button variant="ghost" size="sm" className="w-full">Sign In</Button>
+                </Link>
+                <Link to="/signup" className="w-full">
+                  <Button variant="gradient" size="sm" className="w-full">Get Started</Button>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Users, FileText, Star, GraduationCap, GitCompare, Library, HelpCircle, BookOpen, MessageSquare, FileCheck } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import avatar1 from "@/assets/avatar-1.jpg";
 import avatar2 from "@/assets/avatar-2.jpg";
 import avatar3 from "@/assets/avatar-3.jpg";
@@ -51,9 +52,11 @@ const PDFHero = () => {
 
           {/* CTA Button */}
           <div className="mb-12">
-            <Button variant="gradient" size="xl" className="min-w-[250px]">
-              Start Learning
-            </Button>
+            <Link to="/upload">
+              <Button variant="gradient" size="xl" className="min-w-[250px]">
+                Start Learning
+              </Button>
+            </Link>
           </div>
 
           {/* Social Proof */}
@@ -97,7 +100,7 @@ const PDFHero = () => {
             <div className="bg-card/20 backdrop-blur-md rounded-2xl p-8 border border-foreground/10 shadow-soft">
               <div className="text-center">
                 <h3 className="text-2xl font-bold mb-4">
-                  {activeTab === "exams" && "AI-Generated Practice Exams"}
+                  {activeTab === "exams" && "Practice Exams"}
                   {activeTab === "mindmaps" && "Interactive Mind Maps"}
                   {activeTab === "flashcards" && "Smart Flashcard System"}
                   {activeTab === "quiz" && "Interactive Quiz Generator"}
