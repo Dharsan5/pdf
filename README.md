@@ -1,8 +1,8 @@
-# PDF - PDF Study Tool
+# StudyMind - AI-Powered PDF Study Tool
 
 ## Project Overview
 
-PDF is a modern web application for studying with PDFs, featuring AI-powered tools for creating exams, mind maps, flashcards, and more.
+StudyMind is a modern web application for studying with PDFs, featuring AI-powered tools for creating exams, mind maps, flashcards, and more.
 
 ## Getting Started
 
@@ -19,7 +19,7 @@ Follow these steps to run the project locally:
 git clone https://github.com/Dharsan5/dig-file.git
 
 # Step 2: Navigate to the project directory
-cd dig-file
+cd studymind
 
 # Step 3: Install the necessary dependencies
 npm i

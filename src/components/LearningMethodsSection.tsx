@@ -26,7 +26,7 @@ const LearningMethodsSection = () => {
   }, []);
 
   // Calculate animated values based on scroll progress
-  const studyPDFPercentage = Math.min(95 * animationProgress, 95);
+  const studyMindPercentage = Math.min(95 * animationProgress, 95);
   const traditionalPercentage = Math.max(50 - (25 * animationProgress), 25);
 
   return (
@@ -71,14 +71,14 @@ const LearningMethodsSection = () => {
                   ))}
                 </div>
                 
-                {/* StudyPDF line (curved upward) */}
+                {/* StudyMind line (curved upward) */}
                 <svg
                   className="absolute inset-0 w-full h-full"
                   viewBox="0 0 100 100"
                   preserveAspectRatio="none"
                 >
                   <path
-                    d={`M 0 ${100 - 75} Q 25 ${100 - 80} 50 ${100 - 90} T 100 ${100 - studyPDFPercentage}`}
+                    d={`M 0 ${100 - 75} Q 25 ${100 - 80} 50 ${100 - 90} T 100 ${100 - studyMindPercentage}`}
                     fill="none"
                     stroke="hsl(var(--primary))"
                     strokeWidth="3"
@@ -114,7 +114,7 @@ const LearningMethodsSection = () => {
             <div className="flex justify-center gap-8">
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 bg-primary rounded-full"></div>
-                <span className="text-sm font-medium">StudyPDF</span>
+                <span className="text-sm font-medium">StudyMind</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 bg-muted-foreground rounded-full"></div>

@@ -20,7 +20,7 @@ const PDFHeader = () => {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-primary">PDF</div>
+            <div className="text-2xl font-bold text-primary">StudyMind</div>
           </div>
 
           {/* Desktop Navigation */}

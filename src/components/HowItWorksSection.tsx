@@ -129,7 +129,7 @@ const HowItWorksSection = () => {
     <section ref={sectionRef} className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">How StudyPDF works</h2>
+          <h2 className="text-4xl font-bold mb-4">How StudyMind works</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Transform any study material into an interactive learning experience with our AI-powered platform
           </p>
