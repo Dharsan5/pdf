@@ -7,16 +7,16 @@ import avatar3 from "@/assets/avatar-3.jpg";
 import avatar4 from "@/assets/avatar-4.jpg";
 
 const PDFHero = () => {
-  const [activeTab, setActiveTab] = useState("exams");
+  const [activeTab, setActiveTab] = useState("keytopics");
 
   const tabs = [
+    { id: "keytopics", label: "Key Topics", icon: BookOpen },
+    { id: "quiz", label: "Quiz", icon: HelpCircle },
+    { id: "summary", label: "Summary", icon: FileCheck },
     { id: "exams", label: "Exams", icon: GraduationCap },
     { id: "mindmaps", label: "Mind Maps", icon: GitCompare },
     { id: "flashcards", label: "Flashcards", icon: Library },
-    { id: "quiz", label: "Quiz", icon: HelpCircle },
-    { id: "keytopics", label: "Key Topics", icon: BookOpen },
     { id: "aitutor", label: "AI Tutor", icon: MessageSquare },
-    { id: "summary", label: "Summary", icon: FileCheck },
   ];
 
   return (
@@ -46,13 +46,13 @@ const PDFHero = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl leading-relaxed">
-            Transform any PDF into flashcards, practice tests, and mind maps with one click.
+            Transform any PDF into key topics, quiz , and summary with one click.
           </p>
 
           {/* CTA Button */}
           <div className="mb-12">
             <Button variant="gradient" size="xl" className="min-w-[250px]">
-              Start Learning for Free
+              Start Learning
             </Button>
           </div>
 
