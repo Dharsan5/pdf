@@ -1,6 +1,7 @@
 {
   "files": [],
   "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
+  "exclude": ["eslint.config.js", "vite.config.ts", "tailwind.config.ts", "postcss.config.js", "*.config.js", "*.config.ts", "dist", "node_modules"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
