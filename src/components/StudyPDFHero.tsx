@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Users, FileText, Star, GraduationCap, GitCompare, Library } from "lucide-react";
+import { Users, FileText, Star, GraduationCap, GitCompare, Library, HelpCircle, BookOpen, MessageSquare, FileCheck } from "lucide-react";
 import { useState } from "react";
 import avatar1 from "@/assets/avatar-1.jpg";
 import avatar2 from "@/assets/avatar-2.jpg";
@@ -13,6 +13,10 @@ const StudyPDFHero = () => {
     { id: "exams", label: "Exams", icon: GraduationCap },
     { id: "mindmaps", label: "Mind Maps", icon: GitCompare },
     { id: "flashcards", label: "Flashcards", icon: Library },
+    { id: "quiz", label: "Quiz", icon: HelpCircle },
+    { id: "keytopics", label: "Key Topics", icon: BookOpen },
+    { id: "aitutor", label: "AI Tutor", icon: MessageSquare },
+    { id: "summary", label: "Summary", icon: FileCheck },
   ];
 
   return (
@@ -96,7 +100,7 @@ const StudyPDFHero = () => {
           </div>
 
           {/* Feature Tabs */}
-          <div className="w-full max-w-4xl">
+          <div className="w-full max-w-6xl">
             <div className="flex flex-wrap gap-2 mb-8 justify-center">
               {tabs.map((tab) => {
                 const Icon = tab.icon;
@@ -124,11 +128,19 @@ const StudyPDFHero = () => {
                   {activeTab === "exams" && "AI-Generated Practice Exams"}
                   {activeTab === "mindmaps" && "Interactive Mind Maps"}
                   {activeTab === "flashcards" && "Smart Flashcard System"}
+                  {activeTab === "quiz" && "Interactive Quiz Generator"}
+                  {activeTab === "keytopics" && "Key Topics Extraction"}
+                  {activeTab === "aitutor" && "AI-Powered Personal Tutor"}
+                  {activeTab === "summary" && "Intelligent Document Summary"}
                 </h3>
                 <p className="text-muted-foreground">
                   {activeTab === "exams" && "Create comprehensive practice tests from any PDF document with AI-powered question generation."}
                   {activeTab === "mindmaps" && "Visualize complex information with automatically generated mind maps and concept connections."}
                   {activeTab === "flashcards" && "Generate intelligent flashcards with spaced repetition for optimal learning efficiency."}
+                  {activeTab === "quiz" && "Generate interactive quizzes with multiple choice, true/false, and fill-in-the-blank questions from your study materials."}
+                  {activeTab === "keytopics" && "Automatically identify and extract the most important topics and concepts from your documents for focused learning."}
+                  {activeTab === "aitutor" && "Chat with an AI tutor that understands your study materials and provides personalized explanations and guidance."}
+                  {activeTab === "summary" && "Get concise, comprehensive summaries of lengthy documents while preserving all critical information."}
                 </p>
               </div>
             </div>
