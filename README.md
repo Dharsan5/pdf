@@ -1,8 +1,8 @@
-# DigFile - PDF Study Tool
+# PDF - PDF Study Tool
 
 ## Project Overview
 
-DigFile is a modern web application for studying with PDFs, featuring AI-powered tools for creating exams, mind maps, flashcards, and more.
+PDF is a modern web application for studying with PDFs, featuring AI-powered tools for creating exams, mind maps, flashcards, and more.
 
 ## Getting Started
 

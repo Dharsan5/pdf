@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, Users, FileText, Star } from "lucide-react";
 
-const StudyPDFHeader = () => {
+const PDFHeader = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
@@ -20,7 +20,7 @@ const StudyPDFHeader = () => {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-primary">DigFile</div>
+            <div className="text-2xl font-bold text-primary">PDF</div>
           </div>
 
           {/* Desktop Navigation */}
@@ -111,4 +111,4 @@ const StudyPDFHeader = () => {
   );
 };
 
-export default StudyPDFHeader;
+export default PDFHeader;
