@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# DigFile - PDF Study Tool
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/bc61d039-af33-4208-8f28-30a6f521548b
+DigFile is a modern web application for studying with PDFs, featuring AI-powered tools for creating exams, mind maps, flashcards, and more.
 
-## How can I edit this code?
+## Getting Started
 
-There are several ways of editing your application.
+### Prerequisites
 
-**Use Lovable**
+- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bc61d039-af33-4208-8f28-30a6f521548b) and start prompting.
+### Installation
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Follow these steps to run the project locally:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Step 1: Clone the repository
+git clone https://github.com/Dharsan5/dig-file.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate to the project directory
+cd dig-file
 
-# Step 3: Install the necessary dependencies.
+# Step 3: Install the necessary dependencies
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Development
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+You can edit this code in several ways:
 
-**Use GitHub Codespaces**
+**Local Development**
+- Clone this repository and work with your preferred IDE
+- All changes can be committed and pushed to GitHub
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**GitHub Codespaces**
+- Navigate to the main page of your repository
+- Click on the "Code" button (green button) near the top right
+- Select the "Codespaces" tab
+- Click on "New codespace" to launch a new Codespace environment
+- Edit files directly within the Codespace and commit your changes
 
-## What technologies are used for this project?
+**Direct GitHub Editing**
+- Navigate to the desired file(s)
+- Click the "Edit" button (pencil icon) at the top right of the file view
+- Make your changes and commit the changes
+
+## Technologies Used
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Vite** - Fast build tool and development server
+- **TypeScript** - Type-safe JavaScript
+- **React** - UI library
+- **shadcn/ui** - Modern UI components
+- **Tailwind CSS** - Utility-first CSS framework
 
-## How can I deploy this project?
+## Features
 
-Simply open [Lovable](https://lovable.dev/projects/bc61d039-af33-4208-8f28-30a6f521548b) and click on Share -> Publish.
+- PDF upload and processing
+- AI-powered exam generation
+- Interactive mind maps
+- Smart flashcards
+- AI chat tutor
+- Document summarization
 
-## Can I connect a custom domain to my Lovable project?
+## Deployment
 
-Yes, you can!
+You can deploy this project to various platforms:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Vercel**: Connect your GitHub repository to Vercel for automatic deployments
+- **Netlify**: Link your repo to Netlify for continuous deployment
+- **GitHub Pages**: Use GitHub Actions to deploy to GitHub Pages
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
