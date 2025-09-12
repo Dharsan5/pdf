@@ -134,37 +134,6 @@ const StudyPDFHero = () => {
             </div>
           </div>
 
-          {/* How it Works Section */}
-          <div className="w-full max-w-5xl mt-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Step 1 */}
-              <div className="text-center">
-                <div className="text-6xl font-bold text-primary mb-4">1.</div>
-                <h3 className="text-xl font-bold mb-4 text-primary">Upload Lecture Slides or Notes</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Simply upload your study materials in PDF format or paste YouTube URLs. Our AI processes them instantly for you.
-                </p>
-              </div>
-
-              {/* Step 2 */}
-              <div className="text-center">
-                <div className="text-6xl font-bold text-primary mb-4">2.</div>
-                <h3 className="text-xl font-bold mb-4 text-primary">Generate Study Materials</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Our AI automatically creates comprehensive study materials tailored to your content - from flashcards to mind maps.
-                </p>
-              </div>
-
-              {/* Step 3 */}
-              <div className="text-center">
-                <div className="text-6xl font-bold text-primary mb-4">3.</div>
-                <h3 className="text-xl font-bold mb-4 text-muted-foreground">Gamified Learning</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Stay motivated with points, achievements, and progress tracking while mastering your study materials.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
