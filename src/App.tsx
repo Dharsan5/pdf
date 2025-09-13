@@ -9,6 +9,7 @@ import SignUp from "./pages/SignUp";
 import UploadPage from "./pages/UploadPage";
 import GenerationOptions from "./pages/GenerationOptions";
 import ResultsPage from "./pages/ResultsPage";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/upload" element={<UploadPage />} />
           <Route path="/generate" element={<GenerationOptions />} />
           <Route path="/results" element={<ResultsPage />} />
+          <Route path="/profile" element={<Profile />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

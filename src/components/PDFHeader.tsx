@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown, Users, FileText, Star } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Menu, X, ChevronDown, Users, FileText, Star, User } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const PDFHeader = () => {
@@ -35,6 +36,15 @@ const PDFHeader = () => {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
+            <Link to="/profile">
+              <Button variant="ghost" size="sm" className="flex items-center gap-2">
+                <Avatar className="w-6 h-6">
+                  <AvatarImage src="" alt="Profile" />
+                  <AvatarFallback className="text-xs">AJ</AvatarFallback>
+                </Avatar>
+                Profile
+              </Button>
+            </Link>
             <Link to="/signin">
               <Button variant="ghost" size="sm">Sign In</Button>
             </Link>
